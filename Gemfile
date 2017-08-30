@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '~> 5.1'
 
-gem 'pg'
+
 gem 'redis'
 gem 'puma'
 
@@ -13,6 +13,11 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 
 gem 'jbuilder', '~> 2.0'
+
+group :production do
+gem 'pg'
+
+end	
 
 group :development, :test do
   gem 'byebug'
